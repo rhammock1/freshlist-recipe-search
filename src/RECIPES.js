@@ -258,60 +258,152 @@ const RECIPES = {
     },
     {
       id: cuid(),
-      name: '',
-      recipeType: '',
+      name: 'Pickled Jalapeño Peppers',
+      recipeType: 'Side',
       ingredients: [
         {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
+          ingredient: 'Jalapeños',
+          amount: 15,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Garlic',
+          amount: 2,//a number
+          unit: 'cloves',
+        },
+        {
+          ingredient: 'Water',
+          amount: 1.25,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'White Vinegar',
+          amount: 1.25,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Sugar',
+          amount: 4,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Salt',
+          amount: 2,//a number
+          unit: 'tbsp',
+        },
+        
       ],
-      content: '',
+      content: 'Combine the garlic, water, white vinegar, sugar and salt in a medium sauce pan. Heat to a boil and stir until the sugar and salt are dissolved, and let the mixture come to a boil. Rinse and dry your jalapeños. Wearing gloves is recommended when processing any hot pepper. Remove the stems and slice your peppers into small rings. Pack these sliced jalapeños into a cleaned and dried quart container. Once brine is boiling, pour it over your jalapeños. Cool to room temperature before putting the lid on. Leave the peppers in your fridge overnight to let them fully develop. These pickles can be held in your fridge for up to 2 months in an air tight container. Note: the longer the pepper sits in the brine the less spice it will have. ',
     },
     {
       id: cuid(),
-      name: '',
-      recipeType: '',
+      name: 'Dragon Tongue Beans with Sesame Vinaigrette and Peanuts',
+      recipeType: 'Side',
       ingredients: [
         {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
+          ingredient: 'Dragon Tongue Beans',
+          amount: 1,//a number
+          unit: 'lb',
+        },
+        {
+          ingredient: 'Toasted Peanuts',
+          amount: 1,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Toasted Sesame Seeds',
+          amount: 1,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Olive Oil',
+          amount: 1/2,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Sesame Oil',
+          amount: 1/2,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Ginger, peeled & grated',
+          amount: 2,//a number
+          unit: 'inch',
+        },
+        {
+          ingredient: 'Rice Wine Vinegar',
+          amount: 1,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Lime Juice',
+          amount: 2,//a number
+          unit: 'tbsp',
+        },
       ],
-      content: '',
+      content: 'Make the vinaigrette: Combine all remaining ingredients in a small jar and shake together. This vinaigrette can be consumed right away but is best if held to marinate overnight. You can eat this salad two ways, cooked or raw. For a cooked version of this salad: bring a pot of heavily salted water to boil, add the beans and cook for 3-5 minutes. Remove from the boiling water and submerge in ice water to stop the cooking. Once cooled, use the cooked beans to assemble the salad (see below). To consume raw: cut the beans on a slight bias, dress with the sesame vinaigrette and then place on a plate, garnishing with peanuts and toasted sesame seeds. ',
     },
     {
       id: cuid(),
-      name: '',
-      recipeType: '',
+      name: 'Ginger Leaf Simple Syrup',
+      recipeType: 'Beverage',
       ingredients: [
         {
-          ingredient: '',
+          ingredient: 'Ginger Stems & Leaves',
           amount: 3,//a number
-          unit: lb,
-        }
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Water',
+          amount: 1.5,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'White Sugar',
+          amount: 1/4,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Brown Sugar',
+          amount: 1/4,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Lime Juice',
+          amount: 1/4,//a number
+          unit: 'cup',
+        },
+        
       ],
-      content: '',
+      content: 'Remove the stems and leaves from your ginger root, reserving the root for another recipe, and cut the stem and leaves into small chunks. Combine ginger, water, sugars, and lime juice in a small pot. Bring this up to a low simmer and let cook for 30 minutes. Remove from the heat and let steep for an additional 20 minutes. Strain the syrup through a sieve into a jar. Chill the syrup and cover tightly. The syrup should keep in the fridge for about two weeks.',
     },
     {
       id: cuid(),
-      name: '',
-      recipeType: '',
+      name: 'Ginger Spritzer',
+      recipeType: 'Beverage',
       ingredients: [
         {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
+          ingredient: 'Ginger Simple Syrup',
+          amount: 1/4,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Lime Juice',
+          amount: 1,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Plain Seltzer',
+          amount: 10,//a number
+          unit: 'oz',
+        },
       ],
-      content: '',
+      content: 'To assemble your Ginger Seltzer, add your ginger syrup and lime juice to a small glass and mix. Top this with plain seltzer and garnish with a lime wedge to enjoy a nice refreshing drink!',
     },
     {
       id: cuid(),
-      name: '',
-      recipeType: '',
+      name: 'Roasted Chioggia Beets with Balsamic Glaze',
+      recipeType: 'Side',
       ingredients: [
         {
           ingredient: '',

@@ -8,8 +8,7 @@ describe('App component', () => {
     const div = document.createElement('div');
     ReactDOM.render(
     <BrowserRouter>
-    
-    </BrowserRouter>
-      , div);
+      <App />
+    </BrowserRouter>, div);
   })
 })
