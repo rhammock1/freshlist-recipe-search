@@ -406,25 +406,104 @@ const RECIPES = {
       recipeType: 'Side',
       ingredients: [
         {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
+          ingredient: 'Chioggia Beets, peeled & quartered',
+          amount: 1,//a number
+          unit: 'lb',
+        },
+        {
+          ingredient: 'Olive Oil',
+          amount: 1,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Salt',
+          amount: 1,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Pepper',
+          amount: 1/2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Rosemary',
+          amount: 1/2,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Balsamic Vinegar',
+          amount: 1/2,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Dijon Mustard',
+          amount: 1,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Garlic',
+          amount: 1,//a number
+          unit: 'clove',
+        },
+        {
+          ingredient: 'Maple Syrup or Honey',
+          amount: 2,//a number
+          unit: 'tbsp',
+        },
       ],
-      content: '',
+      content: 'Preheat oven to 375 degrees. Place a piece of parchment paper on your cutting board to avoid stains. Peel your beets using a vegetable peeler then quarter and place them in a large bowl. Toss the beets with olive oil, salt, pepper and rosemary. Bake for 25-30 minutes. While your beets are in the oven, combine all of the ingredients for the glaze in a small sauce pan. Bring this mixture up to a boil, reduce to medium heat and cook for 15-25 minutes or until reduced by half. The finished glaze should coat a spoon without falling off instantly. Remove the beets from the oven and pour the hot balsamic glaze onto the beets. Bake for an additional 10-15 minutes or until the glaze sticks to the beets. Eat these hot as a side or cold on top of salads! ',
     },
     {
       id: cuid(),
-      name: '',
-      recipeType: '',
+      name: 'Buttermilk Panna Cotta with Fruit Gelée',
+      recipeType: 'Dessert',
       ingredients: [
         {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
+          ingredient: 'Heavy Cream, divided',
+          amount: 1.25,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Sugar',
+          amount: 4,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Powdered Gelatin',
+          amount: 1,//a number
+          unit: 'envelope',
+        },
+        {
+          ingredient: 'Buttermilk, cold',
+          amount: 1.75,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Fruit Puree',
+          amount: 1,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Sugar',
+          amount: 6,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Gelatin',
+          amount: 2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Water, cold',
+          amount: 1/4,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Salt',
+          amount: 'To Taste',//a number
+        },
       ],
-      content: '',
+      content: 'Buttermilk Panna Cotta: Sprinkle the gelatin over ¼ cup of cold cream, allow to sit for 10 minutes or until hydrated. Combine sugar and remaining cream in saucepan and heat until sugar has dissolved and cream is hot (do not boil). Remove from heat and stir in gelatin until dissolved. Add buttermilk, stir and strain through fine mesh sieve. Cool to body temperature over ice water bath, stirring, then ladle 4oz into small dishes (glass is best to see the color of the fruit). Cover with plastic. Fruit Gelée: Sprinkle the gelatin over cold water, allow to sit for 10 minutes or until hydrated. Warm fruit purée, sugar, and salt over medium heat to dissolve sugar and salt completely. Add gelatin. Cool to body temperature then spoon mixture over set Panna Cottas (approximately 2 tbsp per dish). Allow to set for 8 hours or overnight. Recipe by Pastry Chef Laney Jahkel-Parrish of 300 East',
     },
     {
       id: cuid(),
