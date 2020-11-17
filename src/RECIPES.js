@@ -505,136 +505,136 @@ const RECIPES = {
       ],
       content: 'Buttermilk Panna Cotta: Sprinkle the gelatin over ¼ cup of cold cream, allow to sit for 10 minutes or until hydrated. Combine sugar and remaining cream in saucepan and heat until sugar has dissolved and cream is hot (do not boil). Remove from heat and stir in gelatin until dissolved. Add buttermilk, stir and strain through fine mesh sieve. Cool to body temperature over ice water bath, stirring, then ladle 4oz into small dishes (glass is best to see the color of the fruit). Cover with plastic. Fruit Gelée: Sprinkle the gelatin over cold water, allow to sit for 10 minutes or until hydrated. Warm fruit purée, sugar, and salt over medium heat to dissolve sugar and salt completely. Add gelatin. Cool to body temperature then spoon mixture over set Panna Cottas (approximately 2 tbsp per dish). Allow to set for 8 hours or overnight. Recipe by Pastry Chef Laney Jahkel-Parrish of 300 East',
     },
-    {
-      id: cuid(),
-      name: '',
-      recipeType: '',
-      ingredients: [
-        {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
-      ],
-      content: '',
-    },
-    {
-      id: cuid(),
-      name: '',
-      recipeType: '',
-      ingredients: [
-        {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
-      ],
-      content: '',
-    },
-    {
-      id: cuid(),
-      name: '',
-      recipeType: '',
-      ingredients: [
-        {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
-      ],
-      content: '',
-    },
-    {
-      id: cuid(),
-      name: '',
-      recipeType: '',
-      ingredients: [
-        {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
-      ],
-      content: '',
-    },
-    {
-      id: cuid(),
-      name: '',
-      recipeType: '',
-      ingredients: [
-        {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
-      ],
-      content: '',
-    },
-    {
-      id: cuid(),
-      name: '',
-      recipeType: '',
-      ingredients: [
-        {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
-      ],
-      content: '',
-    },
-    {
-      id: cuid(),
-      name: '',
-      recipeType: '',
-      ingredients: [
-        {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
-      ],
-      content: '',
-    },
-    {
-      id: cuid(),
-      name: '',
-      recipeType: '',
-      ingredients: [
-        {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
-      ],
-      content: '',
-    },
-    {
-      id: cuid(),
-      name: '',
-      recipeType: '',
-      ingredients: [
-        {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
-      ],
-      content: '',
-    },
-    {
-      id: cuid(),
-      name: '',
-      recipeType: '',
-      ingredients: [
-        {
-          ingredient: '',
-          amount: 3,//a number
-          unit: lb,
-        }
-      ],
-      content: '',
-    },
+    // {
+    //   id: cuid(),
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+    // {
+    //   id: cuid(),
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+    // {
+    //   id: cuid(),
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+    // {
+    //   id: cuid(),
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+    // {
+    //   id: cuid(),
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+    // {
+    //   id: cuid(),
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+    // {
+    //   id: cuid(),
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+    // {
+    //   id: cuid(),
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+    // {
+    //   id: cuid(),
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+    // {
+    //   id: cuid(),
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
     
     
   ]
