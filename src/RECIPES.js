@@ -83,7 +83,7 @@ const RECIPES = {
         {
           ingredient: 'Watercress, finely chopped',
           amount: 1.5,
-          unit: 'cup',
+          unit: 'cups',
         },
         {
           ingredient: 'Cilantro, finely chopped',
@@ -117,7 +117,7 @@ const RECIPES = {
         },
         {
           ingredient: 'Salt & Pepper',
-          unit: 'To Taste',
+          unit: 'to taste',
         },
       ],
       content: 'Finely chop watercress and cilantro (including stems) and add them to a medium sized bowl. Mince shallot and garlic and add to the watercress mix. Add the remaining ingredients. Season with additional salt and pepper as needed. This sauce recipe is easy to pull together but packs great flavor! Use this as a marinade for beef, a topper for cooked chicken or roasted vegetables, or as a spread on a sandwich.',
@@ -194,7 +194,7 @@ const RECIPES = {
         },
         {
           ingredient: 'Salt & Pepper',
-          unit: 'To Taste',
+          unit: 'to taste',
         },
       ],
       content: 'Preheat your oven to 400 degrees. Cut the kabocha squash in half, scrape out the seeds, and place the squash cut side down on a sheet pan lined with parchment paper. Bake squash for 1-1.5 hours until it is tender and develops some good color. When your squash is fully roasted, remove from the oven and let it cool until you can scoop out the flesh. Heat a pot over medium low heat and add the oil. Add the onion, celery, pepper, carrot, and garlic, and sauté for 10 minutes. Add the roasted squash, apples, tomatoes, herbs, and maple syrup. Let this reduce for 5 minutes. Add the stock and let simmer for 30 minutes. Remove from the heat and purée in a high speed blender, being careful to fill the blender no more than halfway and to leave a vent for steam to escape. Season with salt and pepper. Serve garnished with diced apples, crème fraîche, or thyme- or all three!',
@@ -251,7 +251,7 @@ const RECIPES = {
         },
         {
           ingredient: 'Salt & Pepper',
-          amount: 'To Taste',//a number
+          amount: 'to taste',//a number
         },
       ],
       content: 'Cut potatoes into 1/4 inch cubes. Bring a large pot of salted water to a boil. Add the potatoes, cover, and cook over medium-high heat until just tender (about 6 minutes), then drain. Place the drained potatoes on a paper towel-lined plate, and place a paper towel on top to absorb all of the moisture. Heat a large skillet over medium-high heat. Once hot, add butter and oil (vegan option: double the oil or use a vegan butter replacement). Add potatoes and cook without stirring for 3-5 minutes. Reduce to medium heat, add the remaining vegetables and continue to cook, stirring frequently for 15 minutes. Add paprika, salt, and pepper and stir to combine. Remove from heat and toss in your chopped parsley. Enjoy this hash with breakfast, in a burrito, or as an awesome side for dinner! ',
@@ -274,12 +274,12 @@ const RECIPES = {
         {
           ingredient: 'Water',
           amount: 1.25,//a number
-          unit: 'cup',
+          unit: 'cups',
         },
         {
           ingredient: 'White Vinegar',
           amount: 1.25,//a number
-          unit: 'cup',
+          unit: 'cups',
         },
         {
           ingredient: 'Sugar',
@@ -356,7 +356,7 @@ const RECIPES = {
         {
           ingredient: 'Water',
           amount: 1.5,//a number
-          unit: 'cup',
+          unit: 'cups',
         },
         {
           ingredient: 'White Sugar',
@@ -461,7 +461,7 @@ const RECIPES = {
         {
           ingredient: 'Heavy Cream, divided',
           amount: 1.25,//a number
-          unit: 'cup',
+          unit: 'cups',
         },
         {
           ingredient: 'Sugar',
@@ -476,7 +476,7 @@ const RECIPES = {
         {
           ingredient: 'Buttermilk, cold',
           amount: 1.75,//a number
-          unit: 'cup',
+          unit: 'cups',
         },
         {
           ingredient: 'Fruit Puree',
@@ -500,50 +500,169 @@ const RECIPES = {
         },
         {
           ingredient: 'Salt',
-          amount: 'To Taste',//a number
+          amount: 'to taste',//a number
         },
       ],
       content: 'Buttermilk Panna Cotta: Sprinkle the gelatin over ¼ cup of cold cream, allow to sit for 10 minutes or until hydrated. Combine sugar and remaining cream in saucepan and heat until sugar has dissolved and cream is hot (do not boil). Remove from heat and stir in gelatin until dissolved. Add buttermilk, stir and strain through fine mesh sieve. Cool to body temperature over ice water bath, stirring, then ladle 4oz into small dishes (glass is best to see the color of the fruit). Cover with plastic. Fruit Gelée: Sprinkle the gelatin over cold water, allow to sit for 10 minutes or until hydrated. Warm fruit purée, sugar, and salt over medium heat to dissolve sugar and salt completely. Add gelatin. Cool to body temperature then spoon mixture over set Panna Cottas (approximately 2 tbsp per dish). Allow to set for 8 hours or overnight. Recipe by Pastry Chef Laney Jahkel-Parrish of 300 East',
     },
-    // {
-    //   id: cuid(),
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
-    // {
-    //   id: cuid(),
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
-    // {
-    //   id: cuid(),
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
+    {
+      id: cuid(),
+      name: 'Koginut Squash and Apple Salad',
+      recipeType: 'Appetizer',
+      ingredients: [
+        {
+          ingredient: 'Koginut Squash',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Apple, diced',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Dried Fruit (cranberries, raisins, etc.)',
+          amount: 2,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Nuts or Seeds',
+          amount: 1,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Spring Mix',
+          amount: 4,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Soft or Vegan Cheese',
+          amount: 1,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Apple Cider Vinegar',
+          amount: 1/4,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Dijon Mustard',
+          amount: 1,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Salt',
+          amount: 1/2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Maple Syrup',
+          amount: 1.5,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Olive Oil',
+          amount: 5,//a number
+          unit: 'tbsp',
+        },
+      ],
+      content: 'Preheat oven to 375 degrees. Cut squash in half, remove the seeds and place on a baking sheet cut side down. Rub the outside of the squash with a small amount of oil and season with salt and pepper. Roast for 40-55 minutes or until a paring knife can pierce the squash with no resistance. While the squash is roasting, prepare your vinaigrette. Combine vinegar, mustard, salt, and syrup in a small bowl. Slowly whisk in the olive oil until a creamy texture is achieved. Season with salt and pepper. Once the squash has finished roasting, let it cool to room temperature. Cut a few slices of squash and place it on your plate, them dress the lettuce with the vinaigrette and place that on the squash. Finish the salad by adding diced apples, dried fruit, seeds/nuts, and some soft cheese of your choice. This is a great template to create a flavorful fall salad with what you have on hand! ',
+    },
+    {
+      id: cuid(),
+      name: 'Wine Poached Pears',
+      recipeType: 'Dessert',
+      ingredients: [
+        {
+          ingredient: 'Water',
+          amount: 3,//a number
+          unit: 'cups',
+        },
+        {
+          ingredient: 'Sugar',
+          amount: 1,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Pears, peeled, cored, and quartered',
+          amount: 3,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Cinnamon Sticks',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Cloves',
+          amount: 2,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Lemon',
+          amount: 1/2,//a number
+          unit: 'each',
+        },
+      ],
+      content: 'Heat the water and sugar in a large saucepan until warm and the sugar is dissolved. Then add cinnamon stick, cloves, and lemon half. Slide the pears into the sugar water solution and cover with a round of parchment paper that has a small hole cut in the center (this helps air escape, and keeps the pears submerged.) Simmer the pears until cooked through, 15-25 minutes. The pears are fully cooked when a sharp knife can pierce the pear with little to no resistance. Remove from heat and let the pears cool in their liquid. Once cool, carefully remove the pears and strain the liquid. Serve pears drizzled with the cooking liquid with ice cream or on a cheese board! ',
+    },
+    {
+      id: cuid(),
+      name: 'Smokey Pink Eye Peas',
+      recipeType: 'Side',
+      ingredients: [
+        {
+          ingredient: 'Pink Eye Peas',
+          amount: 1,//a number
+          unit: 'lb',
+        },
+        {
+          ingredient: 'Broth',
+          amount: 4,//a number
+          unit: 'cups',
+        },
+        {
+          ingredient: 'Yellow Onion, diced',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Garlic, crushed',
+          amount: 3,//a number
+          unit: 'cloves',
+        },
+        {
+          ingredient: 'Bay Leaves',
+          amount: 2,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Thyme',
+          amount: 3,//a number
+          unit: 'sprigs',
+        },
+        {
+          ingredient: 'Olive Oil',
+          amount: 1,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Apple Cider Vinegar',
+          amount: 1/2,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Smoked Paprika',
+          amount: 1/2,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Salt & Pepper',
+          unit: 'to taste',
+        },
+      ],
+      content: 'Heat olive oil in a medium sauce pan over medium heat. Once hot, add  diced onion and crushed garlic. Sauté until aromatic, stir frequently for 3-5 minutes. Add the rest of the ingredients to the pot and bring to a boil. Reduce to a simmer and cook for 20-25 minutes. The peas are ready when they are tender to the tooth. This recipe is perfect as a side for chicken or pork, or enjoy over rice with roasted vegetables for a wonderful late summer vegan meal.',
+    }, 
     // {
     //   id: cuid(),
     //   name: '',
