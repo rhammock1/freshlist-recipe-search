@@ -18,7 +18,7 @@ class RecipeListMain extends React.Component {
           console.log(recipe);
           
           return(
-            <Recipe key={index} name={recipe.name} />
+            <Recipe key={index} recipe={recipe} />
 
           )
             
