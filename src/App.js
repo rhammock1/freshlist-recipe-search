@@ -3,6 +3,8 @@ import React from 'react';
 import RecipeContext from './RecipeContext';
 import RECIPES from './RECIPES';
 import Header from './Components/Header/Header';
+import RecipeListMain from './Components/RecipeListMain/RecipeListMain';
+import { Route } from 'react-router-dom';
 
 class App extends React.Component {
   state = {
@@ -14,7 +16,10 @@ class App extends React.Component {
   render() {
     const value={RECIPES};
     return (
-      <Header />
+      <>
+        <Header />
+        <Route exact path="/" component={RecipeListMain} />
+      </>    
     )
   }
 }
