@@ -8,18 +8,23 @@ import { Route } from 'react-router-dom';
 
 class App extends React.Component {
   state = {
-    recipeTypes: [RECIPES.recipeTypes],
-    recipes: [RECIPES.recipes],
+    recipeTypes: RECIPES.recipeType,
+    recipes: RECIPES.recipes,
     
   }
 
   render() {
-    const value={RECIPES};
+    const value={
+      recipeTypes: this.state.recipeTypes, 
+      recipes: this.state.recipes,};
+      console.log(this.state.recipes);
+      console.log(value);
     return (
-      <>
+      
+      <RecipeContext.Provider value={value}>
         <Header />
         <Route exact path="/" component={RecipeListMain} />
-      </>    
+      </RecipeContext.Provider>    
     )
   }
 }
