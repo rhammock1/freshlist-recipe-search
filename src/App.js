@@ -4,6 +4,8 @@ import RecipeContext from './RecipeContext';
 import RECIPES from './RECIPES';
 import Header from './Components/Header/Header';
 import RecipeListMain from './Components/RecipeListMain/RecipeListMain';
+import RecipeTypeNav from './Components/RecipeTypeNav/RecipeTypeNav';
+import RecipeSearchForm from './Components/RecipeSearchForm/RecipeSearchForm';
 import { Route } from 'react-router-dom';
 
 class App extends React.Component {
@@ -11,6 +13,34 @@ class App extends React.Component {
     recipeTypes: RECIPES.recipeType,
     recipes: RECIPES.recipes,
     
+  }
+
+  renderMainViews() {
+
+    return (
+      <>
+        {['/', '/recipeType/:recipeType'].map(path => {
+          return(
+            <Route exact key={path} path={path} component={RecipeListMain} />
+          )
+        
+      })}
+      </>
+  
+  )
+  }
+  renderNavViews() {
+    
+    return (
+      <>
+        {['/', '/recipeType/:recipeType'].map(path => {
+          return (
+            <Route exact key={path} path={path} component={RecipeTypeNav} />
+          )
+          
+        })}
+      </>
+    )
   }
 
   render() {
@@ -23,7 +53,9 @@ class App extends React.Component {
       
       <RecipeContext.Provider value={value}>
         <Header />
-        <Route exact path="/" component={RecipeListMain} />
+        <RecipeSearchForm />
+        <nav>{this.renderNavViews()}</nav>
+        <main>{this.renderMainViews()}</main>
       </RecipeContext.Provider>    
     )
   }
