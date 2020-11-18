@@ -11,8 +11,8 @@ class RecipeTypeNav extends React.Component {
       <ul className='recipeTypeNav'>
         {recipeTypes.map((type, index) => {
           return (
-            <li className='type-nav'>
-              <NavLink className='type-link' to={`/recipeType/${type.id}`}>{type.type}</NavLink>
+            <li className='type-nav' key={index}>
+              <NavLink className='type-link' to={`/recipeType/${type.type}`}>{type.type}</NavLink>
             </li>
             )
         })}

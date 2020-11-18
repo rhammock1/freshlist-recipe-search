@@ -1,21 +1,22 @@
 import React from 'react';
 import RecipeContext from '../../RecipeContext';
-
+import { getRecipesForType } from '../../helperFunction';
 import Recipe from '../Recipe/Recipe';
 
 class RecipeListMain extends React.Component {
   static contextType = RecipeContext;
 
   render() {
-    const recipes = this.context.recipes
-    console.log(recipes)
+    const { recipeType } = this.props.match.params;
+    const recipes = this.context.recipes;
+    const recipesForType = getRecipesForType(recipes, recipeType)
+    
     return (
       <>
         
         <section className='recipe-list'>
           <ul>
-            {recipes.map((recipe, index) => {
-          console.log(recipe);
+            {recipesForType.map((recipe, index) => {
           
           return(
             <Recipe key={index} recipe={recipe} />
