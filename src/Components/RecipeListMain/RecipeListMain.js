@@ -19,7 +19,10 @@ class RecipeListMain extends React.Component {
             {recipesForType.map((recipe, index) => {
           
           return(
-            <Recipe key={index} recipe={recipe} />
+            <li className='recipe-li' key={index}>
+              <Recipe key={index} recipe={recipe} />
+            </li>
+            
 
           )
             

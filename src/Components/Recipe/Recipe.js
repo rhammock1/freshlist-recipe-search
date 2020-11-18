@@ -2,13 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Recipe = function(props) {
-  
+  const recipe = props.recipe
   return (
-    <li className='recipe-container'>
-      <Link to={`/recipes/${props.recipe.id}`} >
-        <h3>{props.recipe.name}</h3>
+    <div className='recipe-container'>
+      <Link to={`/recipes/${recipe.id}`} >
+        <h3>{recipe.name}</h3>
       </Link>
-    </li>
+    
+    </div>
+      
     )
 }
 

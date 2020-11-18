@@ -6,6 +6,8 @@ import Header from './Components/Header/Header';
 import RecipeListMain from './Components/RecipeListMain/RecipeListMain';
 import RecipeTypeNav from './Components/RecipeTypeNav/RecipeTypeNav';
 import RecipeSearchForm from './Components/RecipeSearchForm/RecipeSearchForm';
+import RecipePageMain from './Components/RecipePageMain/RecipePageMain';
+import RecipePageNav from './Components/RecipePageNav/RecipePageNav';
 import { Route } from 'react-router-dom';
 
 class App extends React.Component {
@@ -25,6 +27,9 @@ class App extends React.Component {
           )
         
       })}
+      <Route
+          path='/recipes/:recipeId'
+          component={RecipePageMain} />
       </>
   
   )
@@ -39,6 +44,7 @@ class App extends React.Component {
           )
           
         })}
+        <Route path='/recipes/:recipeId' component={RecipePageNav} />
       </>
     )
   }
@@ -47,8 +53,8 @@ class App extends React.Component {
     const value={
       recipeTypes: this.state.recipeTypes, 
       recipes: this.state.recipes,};
-      console.log(this.state.recipes);
-      console.log(value);
+      
+      
     return (
       
       <RecipeContext.Provider value={value}>
