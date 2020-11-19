@@ -11,3 +11,6 @@ body {
 li {
   list-style-type: none;
 }
+ul {
+  padding-left:20px;
+}

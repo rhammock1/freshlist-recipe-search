@@ -1,4 +1,5 @@
 import React from 'react';
+import './Recipe.css';
 import { Link } from 'react-router-dom';
 
 const Recipe = function(props) {
