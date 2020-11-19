@@ -16,11 +16,11 @@ class RecipePageNav extends React.Component {
   static contextType=RecipeContext;
 
   render() {
-    const { recipes, recipeTypes } = this.context;
+    const { recipes } = this.context;
     const { recipeId } = this.props.match.params;
     const recipe = findRecipe(recipes, recipeId) || {}
-    const type = findRecipeType(recipeTypes, recipe.recipeType)
-    console.log(type);
+    // const type = findRecipeType(recipeTypes, recipe.recipeType)
+    
     return (
       <div className='recipePageNav'>
         <Link to='/'><button>Back</button></Link>

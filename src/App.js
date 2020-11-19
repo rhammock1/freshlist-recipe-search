@@ -60,8 +60,11 @@ class App extends React.Component {
       <RecipeContext.Provider value={value}>
         <Header />
         <RecipeSearchForm />
-        <nav>{this.renderNavViews()}</nav>
-        <main>{this.renderMainViews()}</main>
+        <div className='big-container'>
+          <nav>{this.renderNavViews()}</nav>
+          <main>{this.renderMainViews()}</main>
+        </div>
+        
       </RecipeContext.Provider>    
     )
   }

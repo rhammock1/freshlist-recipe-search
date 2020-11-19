@@ -1,4 +1,5 @@
 import React from 'react';
+import './RecipeSearchForm.css';
 
 class RecipeSearchForm extends React.Component {
 

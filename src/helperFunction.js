@@ -1,5 +1,5 @@
 const findRecipeType = function(recipeTypes, rtype) {
-  return recipeTypes.find(type => type.id === rtype);
+  return recipeTypes.find(type => type.type === rtype);
 }
 
 const findRecipe = function(recipes, recipeId) {

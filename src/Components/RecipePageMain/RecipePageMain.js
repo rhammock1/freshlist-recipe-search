@@ -30,6 +30,7 @@ class RecipePageMain extends React.Component {
     const recipeId = this.props.match.params.recipeId
     
     const recipe = findRecipe(recipes, recipeId) || {content: ''}
+    console.log(recipe);
     
     return (
       <section className='recipePageMain'>
