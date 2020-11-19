@@ -1,5 +1,5 @@
 import React from 'react';
-import { getRecipeForSearch } from '../../helperFunction';
+
 import RecipeContext from '../../RecipeContext';
 import './RecipeSearchForm.css';
 
@@ -11,19 +11,11 @@ class RecipeSearchForm extends React.Component {
     },
   }
 
-  static contextType=RecipeContext;
+  static contextType = RecipeContext;
 
-  handleSubmit = event => {
-    event.preventDefault();
-    const searchTerm = event.currentTarget['search-bar'].value;
-    
-    const {recipes} = this.context;
-    
-    getRecipeForSearch(recipes, searchTerm)
-
-    this.props.history.push('/searchResults')
-  }
+  
   render() {
+    let handleSubmit = this.context.handleSubmit;
     return (
 //   The app doesn't really need the search option right now 
 //  It is just here so I don't have to do it later
@@ -32,7 +24,7 @@ class RecipeSearchForm extends React.Component {
 //  Eventually this will all need to be refactored to use
 //  a real db and api and such
 
-      <form className='recipe-search' onSubmit={event => this.handleSubmit(event)}>
+      <form className='recipe-search' onSubmit={event => handleSubmit(event)}>
         <fieldset>
           <legend>Search for Recipes</legend>
           <div className='form-group'>

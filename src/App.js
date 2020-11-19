@@ -9,12 +9,26 @@ import RecipeSearchForm from './Components/RecipeSearchForm/RecipeSearchForm';
 import RecipePageMain from './Components/RecipePageMain/RecipePageMain';
 import RecipePageNav from './Components/RecipePageNav/RecipePageNav';
 import { Route } from 'react-router-dom';
+import SearchResults from './Components/SearchResults/SearchResults';
+import { getRecipeForSearch } from './helperFunction';
 
 class App extends React.Component {
   state = {
     recipeTypes: RECIPES.recipeType,
     recipes: RECIPES.recipes,
+    searchResults: [],
+  }
+  handleSubmit = event => {
+    event.preventDefault();
+    const searchTerm = event.currentTarget['search-bar'].value;
     
+    const recipes = this.state.recipes;
+    
+    let results = getRecipeForSearch(recipes, searchTerm)
+    this.setState({searchResults: results})
+    console.log('hello');
+    this.props.history.push('/searchResults');
+    return results
   }
 
   renderMainViews() {
@@ -30,6 +44,9 @@ class App extends React.Component {
       <Route
           path='/recipes/:recipeId'
           component={RecipePageMain} />
+        <Route 
+          path='/searchResults'
+          component={SearchResults} />
       </>
   
   )
@@ -52,7 +69,9 @@ class App extends React.Component {
   render() {
     const value={
       recipeTypes: this.state.recipeTypes, 
-      recipes: this.state.recipes,};
+      recipes: this.state.recipes,
+      handleSubmit: this.handleSubmit,
+      results: this.state.searchResults};
       
       
     return (

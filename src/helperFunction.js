@@ -14,7 +14,6 @@ const getRecipeForSearch = function(recipes, searchTerm) {
   let searchResults = [];
   recipes.find(recipe => {
     if (recipe.name.trim().toLowerCase().includes(searchTerm.toLowerCase().trim())) {
-      console.log('found ya', recipe.name);
       searchResults.push(recipe);
     }
   })
