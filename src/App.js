@@ -59,7 +59,7 @@ class App extends React.Component {
       
       <RecipeContext.Provider value={value}>
         <Header />
-        <RecipeSearchForm />
+        <Route path='/' component={RecipeSearchForm} />
         <div className='big-container'>
           <nav>{this.renderNavViews()}</nav>
           <main>{this.renderMainViews()}</main>

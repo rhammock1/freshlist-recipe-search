@@ -1,11 +1,27 @@
 import React from 'react';
+import { getRecipeForSearch } from '../../helperFunction';
+import RecipeContext from '../../RecipeContext';
 import './RecipeSearchForm.css';
 
 class RecipeSearchForm extends React.Component {
 
+  static defaultProps = {
+    history: {
+      push: () => {}
+    },
+  }
+
+  static contextType=RecipeContext;
+
   handleSubmit = event => {
     event.preventDefault();
-    console.log('Hey there boss')
+    const searchTerm = event.currentTarget['search-bar'].value;
+    
+    const {recipes} = this.context;
+    
+    getRecipeForSearch(recipes, searchTerm)
+
+    this.props.history.push('/searchResults')
   }
   render() {
     return (
