@@ -1,0 +1,33 @@
+h3 {
+  width:fit-content;
+  margin:0;
+  text-align:left;
+}
+.recipe-list {
+  
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+li.recipe-li  {
+  width:75%;
+  margin:0 auto;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+.recipe-list-ul {
+  width:100%;
+}
+@media all and (min-width: 600px) {
+  .recipe-list-ul {
+    width:100%;
+    text-align:left;
+  }
+  ul {
+    padding-left:0;
+  }
+  li.recipe-li {
+    width: 65%;
+  }
+}

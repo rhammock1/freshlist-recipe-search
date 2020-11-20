@@ -24,7 +24,7 @@ class RecipePageNav extends React.Component {
     
     return (
       <div className='recipePageNav'>
-        <Link to='/'><button>Back</button></Link>
+        <Link to='/'><button className='back-button'>Back</button></Link>
         <h3 className='recipe-page-type'>{recipe.recipeType}</h3>
         
           

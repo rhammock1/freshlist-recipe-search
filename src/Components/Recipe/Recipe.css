@@ -1,7 +1,13 @@
 .recipe-container {
-  width: auto;
-  
-  
+  width: 100%;
   
   margin:10px 0px;
+}
+.recipe-title:hover {
+  border-bottom: 5px solid #9F5FA7;
+}
+@media all and (min-width: 600px) {
+  .recipe-container {
+    text-align:left;
+  }
 }

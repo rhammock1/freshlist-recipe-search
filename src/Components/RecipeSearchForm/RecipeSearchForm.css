@@ -22,7 +22,7 @@ fieldset {
   height:auto;
   margin:5px 0;
   display:flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 legend {
   font-size:40px;

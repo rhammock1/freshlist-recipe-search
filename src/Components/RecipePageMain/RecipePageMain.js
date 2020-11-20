@@ -36,7 +36,7 @@ class RecipePageMain extends React.Component {
     
     return (
       <section className='recipePageMain'>
-        <div className='recipe-title'>
+        <div className='recipe-titles'>
           <Recipe recipe={recipe} />
         </div>
         <div className='recipe-ing'>

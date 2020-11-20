@@ -6,7 +6,7 @@ const Header = function() {
   return (
     <header>
       <Link to='/'>
-        <img src='https://www.freshlist.com/skin1/design/freshlist/logo.svg' alt='Freshlist Logo' />
+        <img id='header-img' src='https://www.freshlist.com/skin1/design/freshlist/logo.svg' alt='Freshlist Logo' />
         {/* <h1>Freshlist Recipe Search</h1> */}
       </Link>
     </header>

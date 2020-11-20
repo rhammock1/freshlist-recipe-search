@@ -13,14 +13,11 @@ li {
   list-style-type: none;
 }
 ul {
-  padding-left:20px;
+  padding-left:0;
 }
 
 a {
   color: #696969;
   text-decoration: none
 }
-a:hover {
-  text-decoration: underline;
-  text-decoration-color: #9F5FA7
-}
+
