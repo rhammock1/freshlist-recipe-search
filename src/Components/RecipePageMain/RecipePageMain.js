@@ -23,19 +23,24 @@ class RecipePageMain extends React.Component {
   }
 
   static contextType = RecipeContext
+
+  handleGetRecipe() {
+    const recipes = this.context.recipes;
+    console.log(recipes)
+    const {recipeId} = this.props.match.params
+    console.log(recipeId)
+    const recipe = findRecipe(recipes, recipeId) 
+    // || {content: '',
+    // ingredients: [],}
+    console.log(recipe);
+  }
   
   render() {
-    const recipes = this.context.recipes;
-    
-    const recipeId = this.props.match.params.recipeId
-    
-    const recipe = findRecipe(recipes, recipeId) || {content: '',
-    ingredients: [],}
-    console.log(recipe);
+    this.handleGetRecipe();
     
     return (
       <section className='recipePageMain'>
-        <div className='recipe-title'>
+        {/* <div className='recipe-title'>
           <Recipe recipe={recipe} />
         </div>
         <div className='recipe-ing'>
@@ -55,7 +60,7 @@ class RecipePageMain extends React.Component {
         </div>
         <div className='recipe-content'>
           <p>{recipe.content}</p>
-        </div>
+        </div> */}
         
         
       </section>

@@ -3,7 +3,9 @@ const findRecipeType = function(recipeTypes, rtype) {
 }
 
 const findRecipe = function(recipes, recipeId) {
-  return recipes.find(recipe => recipe.id === recipeId);
+  let recipe;
+  recipe = recipes.find(recipe => recipe.id === recipeId);
+  return recipe;
 }
 
 const getRecipesForType = function(recipes, type) {
