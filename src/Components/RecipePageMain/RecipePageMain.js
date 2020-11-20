@@ -2,6 +2,7 @@ import React from 'react';
 import Recipe from '../Recipe/Recipe';
 import { findRecipe } from '../../helperFunction';
 import RecipeContext from '../../RecipeContext';
+import './RecipePageMain.css';
 
 
 const Ingredient = function(props) {
@@ -24,23 +25,18 @@ class RecipePageMain extends React.Component {
 
   static contextType = RecipeContext
 
-  handleGetRecipe() {
-    const recipes = this.context.recipes;
-    console.log(recipes)
-    const {recipeId} = this.props.match.params
-    console.log(recipeId)
-    const recipe = findRecipe(recipes, recipeId) 
-    // || {content: '',
-    // ingredients: [],}
-    console.log(recipe);
-  }
+ 
   
   render() {
-    this.handleGetRecipe();
+   const recipes = this.context.recipes;
+    
+    const {recipeId} = this.props.match.params
+    
+    const recipe = findRecipe(recipes, recipeId) 
     
     return (
       <section className='recipePageMain'>
-        {/* <div className='recipe-title'>
+        <div className='recipe-title'>
           <Recipe recipe={recipe} />
         </div>
         <div className='recipe-ing'>
@@ -60,7 +56,7 @@ class RecipePageMain extends React.Component {
         </div>
         <div className='recipe-content'>
           <p>{recipe.content}</p>
-        </div> */}
+        </div>
         
         
       </section>

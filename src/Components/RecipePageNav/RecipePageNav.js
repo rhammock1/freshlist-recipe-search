@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import RecipeContext from '../../RecipeContext';
 import { findRecipe, findRecipeType } from '../../helperFunction';
+import './RecipePageNav.css'
 
 class RecipePageNav extends React.Component {
   static defaultProps = {

@@ -7,7 +7,7 @@ const Recipe = function(props) {
   return (
     <div className='recipe-container'>
       <Link to={`/recipes/${recipe.id}`} >
-        <h3>{recipe.name}</h3>
+        <h3 className='recipe-title recipe-page-title'>{recipe.name}</h3>
       </Link>
     
     </div>

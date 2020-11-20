@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import RecipeContext from '../../RecipeContext';
+import './RecipeTypeNav.css';
 
 class RecipeTypeNav extends React.Component {
   static contextType = RecipeContext;

@@ -1,0 +1,9 @@
+.recipeTypeNav {
+  display:flex;
+  justify-content:center;
+  width:100%;
+  padding-left:0;
+}
+.type-nav {
+  padding-right:5px;
+}

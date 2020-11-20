@@ -31,7 +31,7 @@ class RecipeSearchForm extends React.Component {
             <label htmlFor='search-bar'>Recipe: </label>
             <input type='text' id='search-bar' name='search-bar' />
           </div>
-          <div className='form-group'>
+          {/* <div className='form-group'>
             <label htmlFor='recipeType'>Recipe Type: </label>
             <select id='recipeType' name='recipeType' >
               <option value={null}>filter</option>
@@ -42,7 +42,7 @@ class RecipeSearchForm extends React.Component {
               <option value='Beverage'>Beverage</option>
               <option value='Dessert'>Dessert</option>
             </select>
-          </div>
+          </div> */}
           <button type='submit'>SEND IT!</button>
         </fieldset>
       </form>

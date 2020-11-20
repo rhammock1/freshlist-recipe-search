@@ -1,0 +1,12 @@
+/* .recipe-page-type {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+} */
+.recipePageNav {
+  display: flex;
+  width: auto;
+  height: 50%;
+  
+  align-items: baseline;
+  justify-content:space-around;
+}
