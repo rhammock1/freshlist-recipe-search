@@ -8,7 +8,7 @@
 }
 h3 {
   
-  width:max-content;
+  width:fit-content;
   margin:0;
   text-align:left;
 }
@@ -16,4 +16,10 @@ h3 {
   .recipe-container {
     text-align:left;
   }
+  h3 {
+  
+  width:max-content;
+  margin:0;
+  text-align:left;
+}
 }
