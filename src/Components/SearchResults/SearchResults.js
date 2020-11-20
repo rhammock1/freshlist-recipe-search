@@ -2,6 +2,7 @@ import React from 'react';
 import RecipeContext from '../../RecipeContext';
 import Recipe from '../Recipe/Recipe';
 import { Link } from 'react-router-dom';
+import './SearchResults.css';
 
 class SearchResults extends React.Component {
   static contextType=RecipeContext;
@@ -12,11 +13,11 @@ class SearchResults extends React.Component {
     return(
       <section className='recipe-list'>
         <Link to='/'><button>Back</button></Link>
-          <ul>
+          <ul className='search-results'>
             {results.map((recipe, index) => {
           
           return(
-            <li className='recipe-li' key={index}>
+            <li className='recipe-li results-li' key={index}>
               <Recipe key={index} recipe={recipe} />
             </li>
             

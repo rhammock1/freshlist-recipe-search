@@ -6,6 +6,12 @@
 .recipe-title:hover {
   border-bottom: 5px solid #9F5FA7;
 }
+h3 {
+  
+  width:max-content;
+  margin:0;
+  text-align:left;
+}
 @media all and (min-width: 600px) {
   .recipe-container {
     text-align:left;
