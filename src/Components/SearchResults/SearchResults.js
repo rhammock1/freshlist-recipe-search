@@ -13,6 +13,7 @@ class SearchResults extends React.Component {
     return(
       <section className='recipe-list'>
         <Link to='/'><button>Back</button></Link>
+        <h2 className='results'>Results:</h2>
           <ul className='search-results'>
             {results.map((recipe, index) => {
           

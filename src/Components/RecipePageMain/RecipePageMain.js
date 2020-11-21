@@ -6,10 +6,17 @@ import './RecipePageMain.css';
 
 
 const Ingredient = function(props) {
-  
-  return (
-    <p>{props.ing.amount} {props.ing.unit} - {props.ing.ingredient}</p>
+  const rounded = Math.round(props.ing.amount * 100)/100;
+  if (rounded === 0) {
+    return (
+    <p>{props.ing.unit} - {props.ing.ingredient}</p>
     )
+  } else {
+    return (
+    <p>{rounded} {props.ing.unit} - {props.ing.ingredient}</p>
+    )
+  }
+  
 
 }
 

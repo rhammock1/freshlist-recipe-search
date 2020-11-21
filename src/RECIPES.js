@@ -70,6 +70,7 @@ const RECIPES = {
         },
         {
           ingredient: 'Salt & Pepper',
+          amount: 0,
           unit: 'to taste',
         },
       ],
@@ -117,6 +118,7 @@ const RECIPES = {
         },
         {
           ingredient: 'Salt & Pepper',
+          amount: 0,
           unit: 'to taste',
         },
       ],
@@ -194,6 +196,7 @@ const RECIPES = {
         },
         {
           ingredient: 'Salt & Pepper',
+          amount: 0,
           unit: 'to taste',
         },
       ],
@@ -251,7 +254,8 @@ const RECIPES = {
         },
         {
           ingredient: 'Salt & Pepper',
-          amount: 'to taste',//a number
+          amount: 0,
+          unit: 'to taste',//a number
         },
       ],
       content: 'Cut potatoes into 1/4 inch cubes. Bring a large pot of salted water to a boil. Add the potatoes, cover, and cook over medium-high heat until just tender (about 6 minutes), then drain. Place the drained potatoes on a paper towel-lined plate, and place a paper towel on top to absorb all of the moisture. Heat a large skillet over medium-high heat. Once hot, add butter and oil (vegan option: double the oil or use a vegan butter replacement). Add potatoes and cook without stirring for 3-5 minutes. Reduce to medium heat, add the remaining vegetables and continue to cook, stirring frequently for 15 minutes. Add paprika, salt, and pepper and stir to combine. Remove from heat and toss in your chopped parsley. Enjoy this hash with breakfast, in a burrito, or as an awesome side for dinner! ',
@@ -500,7 +504,8 @@ const RECIPES = {
         },
         {
           ingredient: 'Salt',
-          amount: 'to taste',//a number
+          amount: 0,
+          unit: 'to taste',//a number
         },
       ],
       content: 'Buttermilk Panna Cotta: Sprinkle the gelatin over ¼ cup of cold cream, allow to sit for 10 minutes or until hydrated. Combine sugar and remaining cream in saucepan and heat until sugar has dissolved and cream is hot (do not boil). Remove from heat and stir in gelatin until dissolved. Add buttermilk, stir and strain through fine mesh sieve. Cool to body temperature over ice water bath, stirring, then ladle 4oz into small dishes (glass is best to see the color of the fruit). Cover with plastic. Fruit Gelée: Sprinkle the gelatin over cold water, allow to sit for 10 minutes or until hydrated. Warm fruit purée, sugar, and salt over medium heat to dissolve sugar and salt completely. Add gelatin. Cool to body temperature then spoon mixture over set Panna Cottas (approximately 2 tbsp per dish). Allow to set for 8 hours or overnight. Recipe by Pastry Chef Laney Jahkel-Parrish of 300 East',
@@ -658,6 +663,7 @@ const RECIPES = {
         },
         {
           ingredient: 'Salt & Pepper',
+          amount: 0,
           unit: 'to taste',
         },
       ],
