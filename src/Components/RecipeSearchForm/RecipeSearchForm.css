@@ -16,19 +16,25 @@ fieldset {
   align-items: center;
 }
 .form-group {
-  font-size: 20px;
-  font-weight: 500;
-  width: 70%;
+  font-size: 25px;
+  font-weight: 600;
+  width: 75%;
   height:auto;
   margin:5px 0;
   display:flex;
   justify-content: center;
+  
 }
 legend {
-  font-size:40px;
+  font-size:45px;
   font-weight: 900;
+  height:auto;
+}
+h2 {
+  margin:0;
 }
 button {
+  font-weight:600;
   margin-top:15px;
   border:none;
   border-radius: 30px;

@@ -26,7 +26,7 @@ class RecipeSearchForm extends React.Component {
 
       <form className='recipe-search' onSubmit={event => handleSubmit(event)}>
         <fieldset>
-          <legend>Search for Recipes</legend>
+          <legend><h2>Search for Recipes</h2></legend>
           <div className='form-group'>
             <label htmlFor='search-bar'>Recipe: </label>
             <input type='text' id='search-bar' name='search-bar' />
