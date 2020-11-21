@@ -11,3 +11,8 @@
   border-bottom: 5px solid #9F5FA7;
   
 }
+
+.active {
+  font-size: 20px;
+  border-bottom: 5px solid #9F5FA7;
+}

@@ -6,14 +6,21 @@ import './RecipeTypeNav.css';
 class RecipeTypeNav extends React.Component {
   static contextType = RecipeContext;
 
+  handleAddClass(event) {
+    
+    let id = event.currentTarget.id;
+    let active = document.getElementById(id);
+    active.classList.add('active');
+  }
+
   render() {
     const recipeTypes = this.context.recipeTypes;
     return (
       <ul className='recipeTypeNav'>
         {recipeTypes.map((type, index) => {
           return (
-            <li className='type-nav' key={index}>
-              <NavLink className='type-link' to={`/recipeType/${type.type}`}>{type.type}</NavLink>
+            <li className='type-nav'  key={index}>
+              <NavLink onClick={event => this.handleAddClass(event)}className='type-link' id={type.type} to={`/recipeType/${type.type}`}>{type.type}</NavLink>
             </li>
             )
         })}
