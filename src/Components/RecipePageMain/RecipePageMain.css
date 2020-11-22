@@ -1,11 +1,18 @@
-.recipe-page-title {
-  text-align: left;
-
+.recipe-titles {
+  text-align: center;
 }
 .recipe-content {
   width: 75%;
   margin: 10px;
   text-align: left;
+}
+.recipe-ing {
+  width:75%;
+}
+.ing-container {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
 }
 .recipePageMain {
   display:flex;

@@ -434,6 +434,11 @@ const RECIPES = {
           unit: 'oz',
         },
         {
+          ingredient: 'Balsamic Glaze:',
+          amount: 0,//a number
+          unit: '',
+        },
+        {
           ingredient: 'Balsamic Vinegar',
           amount: 1/2,//a number
           unit: 'cup',
@@ -865,6 +870,31 @@ Serve cold, garnished with a drizzle of olive oil and chopped herbs (parsley, ba
           amount: 0,//a number
           unit: '',
         },
+        {
+          ingredient: 'Soy Sauce',
+          amount: 1/2,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Mirin',
+          amount: 1/4,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Rice Wine Vinegar',
+          amount: 1,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Brown Sugar',
+          amount: 1.5,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Ginger, 2 tbsp grated & 2 tbsp minced',
+          amount: 4,//a number
+          unit: 'tbsp',
+        },
       ],
       content: `Whisk all marinade ingredients in a medium bowl thoroughly to dissolve the brown sugar.   
 Add cut eggplant to your bowl with the teriyaki marinade. Leave eggplant in the marinade for 1 hour. 
@@ -872,8 +902,221 @@ While the eggplant is marinating, heat a large pot of salted water to a boil. Bl
 Once the eggplant is done marinating, heat 1 tbsp of oil in a medium non-stick pan over medium heat. Remove eggplant from the marinade and brown, turning to cook all sides, for 4-5 minutes. Remove the eggplant, then add onions and long beans and saute for 2-3 minutes. Add the eggplant back to the pan with any remaining marinade, and let simmer for 2-3 minutes. 
 Serve over white or brown rice, garnish with scallion greens and sesame seeds.`,
     },
-    // {
-    //   id: '1e3df1g7',
+    {
+      id: '1e3df1g7',
+      name: 'Roasted Butternut Squash Bread',
+      recipeType: 'Dessert',
+      ingredients: [
+        {
+          ingredient: 'All Purpose Flour',
+          amount: 1.5,//a number
+          unit: 'cups',
+        },
+        {
+          ingredient: 'Baking Soda',
+          amount: 1,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Baking Powder',
+          amount: 1/2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Salt',
+          amount: 1/4,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Pumpkin Pie Spice',
+          amount: 1,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Black Pepper',
+          amount: 1/4,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'White Sugar',
+          amount: 1/2,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Brown Sugar',
+          amount: 1/2,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Butternut Squash',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Apple Sauce',
+          amount: 1/2,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Oil',
+          amount: 3/4,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Vanilla',
+          amount: 1,//a number
+          unit: 'tsp',
+        },
+      ],
+      content: `Preheat oven to 400 degrees. Use a vegetable peeler to remove the skin from a medium sized butternut squash. Cut squash in half, remove the seeds, and cut your squash into 1/2 inch chunks. Place in a bowl and toss with 2 tsp oil and the pumpkin pie spice, bake for 30 minutes. After 30 minutes, add 2 tbsp of water to the pan with the squash, and continue to cook for another 20-30 minutes or until fork tender. Once fully cooked, remove from the oven and let cook completely. REDUCE OVEN TEMPERATURE TO 325 DEGREES. Mash your squash with a fork until mostly smooth (some small chunks will be fine). Mix 1.5 cups of squash puree to a bowl with the white & brown sugars, apple sauce, oil, and black pepper until smooth. Add the remaining ingredients and fold together using a spatula until smooth. Prepare a loaf pan and bake your bread for 50-60 minutes. Your bread is finished when a toothpick inserted into the loaf comes out clean. Once fully cooked, remove from oven and cool completely on a rack before cutting! 
+`,
+    },
+    {
+      id: '1e3df1g8',
+      name: 'Turkey and Andouille Smoked Sausage Gumbo',
+      recipeType: 'Entree',
+      ingredients: [
+        {
+          ingredient: 'All Purpose Flour',
+          amount: 1/2,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Garlic Powder, more to taste',
+          amount: 1/2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Ground Red Pepper, more to taste',
+          amount: 1/2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Salt, more to taste',
+          amount: 1/2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Leftover Turkey',
+          amount: 2,//a number
+          unit: 'lbs',
+        },
+        {
+          ingredient: 'Oil',
+          amount: 1/2,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Andouille Sausage, chopped',
+          amount: 1/2,//a number
+          unit: 'lb',
+        },
+        {
+          ingredient: 'Onion, chopped',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Green Pepper, chopped',
+          amount: 1.5,//a number
+          unit: 'cups',
+        },
+        {
+          ingredient: 'Celery, chopped',
+          amount: 1.25,//a number
+          unit: 'cups',
+        },
+        {
+          ingredient: 'Chicken Stock',
+          amount: 7,//a number
+          unit: 'cups',
+        },
+        {
+          ingredient: 'Garlic, minced',
+          amount: 1,//a number
+          unit: 'tsp',
+        },
+      ],
+      content: `Combine 1/2 cup flour and 1/2 tsp each of salt, garlic powder, and red pepper in a small bowl. Sprinkle salt, garlic, and red pepper on your leftover turkey (to taste) and set aside. In a large heavy skillet, heat 1/2 cup of oil. Fry the andouille until brown on all sides and the meat is cooked (about 5 minutes). Remove from the pan and drain on paper towels. 
+      Place the pan over high heat. Using a long-handled metal whisk, gradually stir in the flour mixture. Cook, whisking constantly until the roux is rust-colored and the consistency of grits or oatmeal (you may need extra flour). It usually takes 4 to 5 minutes. Remove from the heat as soon as it’s the right color and consistency, and immediately add the vegetables, stirring constantly to cool the roux down. Return the pan to low heat and cook until the vegetables are soft, about 5 minutes, stirring constantly and scraping the pan bottom.
+      While the roux and vegetables cook, bring the stock to a boil in a large soup pot. Add the roux to the boiling stock one spoonful at a time, stirring until dissolved before adding more. Return your stock mixture to a boil before reducing the heat to a simmer. Stir in the andouille, garlic, and turkey. Simmer uncovered for about 30 minutes, stirring and scraping the pan bottom often. Serve immediately with plenty of rice. We recommend Carolina Gold Rice for a delicious local option. This recipe freezes well! Recipe courtesy of Erin Bradley, adapted by Chef Matt Martin.`,
+    },
+    {
+      id: '1e3df1g9',
+      name: 'Chili-Seared Bok Choy',
+      recipeType: 'Appetizer',
+      ingredients: [
+        {
+          ingredient: 'Large head of Bok Choy',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Sesame Oil',
+          amount: 1,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Garlic, thinly sliced',
+          amount: 3,//a number
+          unit: 'cloves',
+        },
+        {
+          ingredient: 'Chili Paste (e.ge. Sriracha, Mae Ploy',
+          amount: 1,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Vegetable or Chicken Stock',
+          amount: 1/4,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Sesame Seeds',
+          amount: 1,//a number
+          unit: 'tbsp',
+        },
+      ],
+      content: `(Serves 2) Toast the sesame seeds in a dry, small frying pan over medium heat until they turn golden brown, shaking
+frequently to prevent the seeds from burning (3-4 min). Remove from heat and set aside on a plate.
+Cut the large base off of the bok choy and separate the leaves from the stem and rinse with cold water.
+In a wok or large frying pan, warm the sesame oil over medium-high heat. When oil is hot and shimmering in the pan,
+add garlic, toss and stir constantly until garlic is fragrant but not browned (20-30 seconds).
+Add bok choy and a pinch of salt to the pan. Toss and stir until the bok choy begins to wilt (1-2 minutes).
+Add broth and cook, stirring occasionally, until the bok choy is tender and the broth evaporates (1-2 minutes).
+Add chili paste, stir well to coat the bok choy. Remove from heat, top with toasted sesame seeds. Transfer to a
+warmed serving bowl, and serve immediately!`,
+    },
+    {
+      id: '1e3df1g9a1',
+      name: 'Kohlrabi Schniztel',
+      recipeType: 'Entree',
+      ingredients: [
+        {
+          ingredient: 'Medium head of Kohlrabi',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Egg (Vegan option: 1/4 cup AP Flour + 1/3 cup water)',
+          amount: 1,//a number
+          unit: 'each',
+        },
+      ],
+      content: `Bring a medium sized pot of salted water to a boil. While waiting for the water to boil use a vegetable peeler and remove the outer layer of the kohlrabi, discarding the peels. Cut the Kohlrabi into ½ inch sized slices and boil for 6-8 minutes. Remove the kohlrabi from the pot and set it aside to cool. (This process can be done the day before making the final dish) 
+To prepare the egg wash: crack the egg into a small bowl and whisk with 1 tablespoon of water. Add the smoked paprika, salt, and (optional) poultry seasoning and whisk to combine. 
+To prepare vegan option egg wash: in a small bowl, mix 1/4 cup all purpose flour with 1/3 cup water. Add   salt, smoked paprika, and (optional) poultry seasoning and whisk until a smooth a consistency is 
+reached. 
+Add all of the ingredients for the breading into a separate medium sized bowl. 
+To bread your kohlrabi, dip pieces into your wash and then into your dredge. Press the kohlrabi firmly in
+the breading on all sides to make sure the breading adheres. In a medium sized frying pan, heat 1/8 cup of oil over medium heat. Fry breaded kohlrabi for 5 minutes on each side. Remove from the pan once done, season with salt and pepper, and place on a pan with a napkin to absorb any residual oil. 
+
+Enjoy schnitzel over mashed potatoes, on a Duke's Bread brioche hamburger bun, or on top of a fresh Fair Share spring mix salad! 
+
+`,
+    },
+    //  {
+    //   id: '1e3df1g9a2',
     //   name: '',
     //   recipeType: '',
     //   ingredients: [
@@ -885,8 +1128,8 @@ Serve over white or brown rice, garnish with scallion greens and sesame seeds.`,
     //   ],
     //   content: '',
     // },
-    // {
-    //   id: '1e3df1g8',
+    //  {
+    //   id: '1e3df1g9a3',
     //   name: '',
     //   recipeType: '',
     //   ingredients: [
@@ -898,8 +1141,8 @@ Serve over white or brown rice, garnish with scallion greens and sesame seeds.`,
     //   ],
     //   content: '',
     // },
-    // {
-    //   id: '1e3df1g9',
+    //  {
+    //   id: '1e3df1g9a4',
     //   name: '',
     //   recipeType: '',
     //   ingredients: [
@@ -911,7 +1154,8 @@ Serve over white or brown rice, garnish with scallion greens and sesame seeds.`,
     //   ],
     //   content: '',
     // },
-        //   id: '1e3df1g9a1',
+    //  {
+    //   id: '1e3df1g9a5',
     //   name: '',
     //   recipeType: '',
     //   ingredients: [
@@ -923,55 +1167,8 @@ Serve over white or brown rice, garnish with scallion greens and sesame seeds.`,
     //   ],
     //   content: '',
     // },
-        //   id: '1e3df1g9a2',
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
-        //   id: '1e3df1g9a3',
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
-        //   id: '1e3df1g9a4',
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
-        //   id: '1e3df1g9a5',
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
-        //   id: '1e3df1g9a6',
+    //  {
+    //   id: '1e3df1g9a6',
     //   name: '',
     //   recipeType: '',
     //   ingredients: [

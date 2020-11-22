@@ -10,16 +10,5 @@ h3 {
   font-size:30px;
   width:fit-content;
   margin:0;
-  text-align:left;
-}
-@media all and (min-width: 600px) {
-  .recipe-container {
-    text-align:left;
-  }
-  h3 {
   
-  width:max-content;
-  margin:0;
-  text-align:left;
-}
 }

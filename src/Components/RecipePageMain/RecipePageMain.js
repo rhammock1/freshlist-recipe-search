@@ -9,11 +9,11 @@ const Ingredient = function(props) {
   const rounded = Math.round(props.ing.amount * 100)/100;
   if (rounded === 0) {
     return (
-    <p>{props.ing.unit} <span className='ingredient'>{props.ing.ingredient}</span></p>
+    <p className='recipe-ing'>{props.ing.unit} <span className='ingredient'>{props.ing.ingredient}</span></p>
     )
   } else {
     return (
-    <p><span className='amount'>{rounded}</span> <span className='unit'>{props.ing.unit}</span> <span className='ingredient'>{props.ing.ingredient}</span></p>
+    <p className='recipe-ing'><span className='amount'>{rounded}</span> <span className='unit'>{props.ing.unit}</span> <span className='ingredient'>{props.ing.ingredient}</span></p>
     )
   }
   
@@ -51,7 +51,7 @@ class RecipePageMain extends React.Component {
             
               {recipe.ingredients.map((ing, index) => {
                 return (
-                  <li key={index}>
+                  <li className='ing-container'key={index}>
                     <Ingredient key={index} ing={ing} />
                   </li>
                   
