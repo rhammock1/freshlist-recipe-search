@@ -2,11 +2,16 @@
   display:flex;
   justify-content:space-around;
   width:100%;
+  height:100%;
+  margin:0;
+  padding:10px 0;
   padding-left:0;
+  background-color: #00b0a9;
 }
-/* .type-nav {
-  padding-right:5px;
-} */
+.type-link {
+  color: white;
+  font-weight:600;
+}
 .type-link:hover {
   border-bottom: 5px solid #9F5FA7;
   
