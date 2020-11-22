@@ -1,4 +1,3 @@
-import cuid from 'cuid';
 
 const RECIPES = {
   recipeType: [
@@ -667,60 +666,212 @@ const RECIPES = {
           unit: 'to taste',
         },
       ],
-      content: 'Heat olive oil in a medium sauce pan over medium heat. Once hot, add  diced onion and crushed garlic. Sauté until aromatic, stir frequently for 3-5 minutes. Add the rest of the ingredients to the pot and bring to a boil. Reduce to a simmer and cook for 20-25 minutes. The peas are ready when they are tender to the tooth. This recipe is perfect as a side for chicken or pork, or enjoy over rice with roasted vegetables for a wonderful late summer vegan meal.',
+      content: 'Heat olive oil in a medium sauce pan over medium heat. Once hot, add  diced onion and crushed garlic. Sauté until aromatic, stir frequently for 3-5 minutes. Add the rest of the ingredients to the pot and bring to a boil. Reduce to a simmer and cook for 20-25 minutes. The peas are ready when they are tender to the tooth. This recipe is perfect as a side for chicken or pork, or enjoy over rice with roasted vegetables for a wonderful late summer vegan meal. ',
     }, 
-    // {
-    //   id: '1e3df1g3',
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
-    // {
-    //   id: '1e3df1g4',
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
-    // {
-    //   id: '1e3df1g5',
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
-    // {
-    //   id: '1e3df1g6',
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
+    {
+      id: '1e3df1g3',
+      name: 'Herbed Oyster Mushroom Steak',
+      recipeType: 'Entree',
+      ingredients: [
+        {
+          ingredient: 'Lemon, zested & juiced',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Olive Oil',
+          amount: 1/3,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Parsley, chopped',
+          amount: 2,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Scallions, chopped & greens reserved',
+          amount: 4,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Garlic Powder',
+          amount: 1/2,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Onion Powder',
+          amount: 1/2,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Oyster Mushrooms',
+          amount: 1,//a number
+          unit: 'lb',
+        },
+      ],
+      content: 'Preheat oven to 375°. Zest and juice lemon into a medium bowl. Add chopped parsley, scallion bulbs, olive oil, onion powder, and garlic powder. Whisk to combine. Add oyster mushrooms to the bowl with the marinade, toss to coat mushrooms, and set aside. Mushrooms can marinate for up to 24 hours in the refrigerator. Heat a medium cast iron pan over medium-high heat. Add olive oil to fully coat the bottom of pan. Remove mushrooms from the marinade and place in pan to sear (TIP: place a second pan on top of the mushrooms to weigh them down and create a more even sear). Cook mushrooms for about 5 minutes on each side. Remove top pan (if used) and place mushrooms in oven for 5-7 minutes to finish cooking and ensure crisping.',
+    },
+    {
+      id: '1e3df1g4',
+      name: 'Apple Cinnamon Oat Bake',
+      recipeType: 'Dessert',
+      ingredients: [
+        {
+          ingredient: 'Old Fashioned Oats',
+          amount: 1,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Water, boiling',
+          amount: 1,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Ginger Gold Apples, peeled & diced',
+          amount: 2,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Banana, sliced',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Milk, or milk alternative',
+          amount: 1/4,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Maple Syrup',
+          amount: 2,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Raisins',
+          amount: 1/2,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Ground Cinnamon',
+          amount: 2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'nutmeg',
+          amount: 1/4,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Oil, or butter to coat the pan',
+          amount: 0,//a number
+          unit: 'to taste',
+        },
+      ],
+      content: 'Preheat the oven to 350 degrees. Place oats in a medium bowl and bring water to a boil. Pour  boiling water over your oats, stir and and let sit for 10 minutes to soften. While the oats soak, prepare the fruit. Once the oats are done soaking, combine the rest of the ingredients with the oats and mix thoroughly. Season a 9x6 baking dish with a small amount of oil or butter, and add the oat mixture to the pan. Bake for 30 minutes and remove once the top is nicely browned. This recipe can be made in muffin tins as well,  just reduce your cooking time by 5-8 minutes!',
+    },
+    {
+      id: '1e3df1g5',
+      name: 'Yellow Tomato Gazpacho',
+      recipeType: 'Appetizer',
+      ingredients: [
+        {
+          ingredient: 'Yellow Tomatoes',
+          amount: 2,//a number
+          unit: 'lb',
+        },
+        {
+          ingredient: 'Carrot, peeled',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Red Bell Pepper, cored & deseeded',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Cucumber, peeled & deseeded',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Onion, cored',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Garlic',
+          amount: 1,//a number
+          unit: 'clove',
+        },
+        {
+          ingredient: 'White Bread, toasted medium',
+          amount: 1,//a number
+          unit: 'slice',
+        },
+        {
+          ingredient: 'White Balsamic Vinegar',
+          amount: 2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Olive Oil',
+          amount: 1/2,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Tabasco',
+          amount: 1,//a number
+          unit: 'dash',
+        },
+      ],
+      content: `Roughly dice all of the prepped vegetables- don't worry about knife cuts, everything will be pureed.
+Add the vegetables, bread, and white balsamic vinegar to the base of a high speed blender (a regular blender or immersion blender will work, too!). Start the blender on low speed. While the blender is running, slowly pour your olive oil through the top of the blender. As you add the oil, your soup will start to thicken. The soup should be very smooth once all of the oil has been added.
+Remove from the blender and season with additional salt, pepper, and hot sauce as needed. 
+Serve cold, garnished with a drizzle of olive oil and chopped herbs (parsley, basil, or chervil all work well). `,
+    },
+    {
+      id: '1e3df1g6',
+      name: 'Teriyaki Marinated Eggplant',
+      recipeType: 'Entree',
+      ingredients: [
+        {
+          ingredient: 'Medium Eggplant, cut into 1/2 inch chunks',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Long Beans, cut into 2-3 inch pieces',
+          amount: 8,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'White Onion, medium diced',
+          amount: 1/2,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Scallion, sliced on a bias, greens reserved for garnish',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Sesame Seeds, for garnish',
+          amount: 0,//a number
+          unit: '',
+        },
+        {
+          ingredient: 'Teriyaki Marinade:',
+          amount: 0,//a number
+          unit: '',
+        },
+      ],
+      content: `Whisk all marinade ingredients in a medium bowl thoroughly to dissolve the brown sugar.   
+Add cut eggplant to your bowl with the teriyaki marinade. Leave eggplant in the marinade for 1 hour. 
+While the eggplant is marinating, heat a large pot of salted water to a boil. Blanch the cut beans for 2-3 minutes: remove the beans using a strainer and place into ice water for 2-3 minutes until the cooking stops. Remove from the water, dry, and set aside. 
+Once the eggplant is done marinating, heat 1 tbsp of oil in a medium non-stick pan over medium heat. Remove eggplant from the marinade and brown, turning to cook all sides, for 4-5 minutes. Remove the eggplant, then add onions and long beans and saute for 2-3 minutes. Add the eggplant back to the pan with any remaining marinade, and let simmer for 2-3 minutes. 
+Serve over white or brown rice, garnish with scallion greens and sesame seeds.`,
+    },
     // {
     //   id: '1e3df1g7',
     //   name: '',
@@ -749,6 +900,78 @@ const RECIPES = {
     // },
     // {
     //   id: '1e3df1g9',
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+        //   id: '1e3df1g9a1',
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+        //   id: '1e3df1g9a2',
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+        //   id: '1e3df1g9a3',
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+        //   id: '1e3df1g9a4',
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+        //   id: '1e3df1g9a5',
+    //   name: '',
+    //   recipeType: '',
+    //   ingredients: [
+    //     {
+    //       ingredient: '',
+    //       amount: 3,//a number
+    //       unit: lb,
+    //     }
+    //   ],
+    //   content: '',
+    // },
+        //   id: '1e3df1g9a6',
     //   name: '',
     //   recipeType: '',
     //   ingredients: [

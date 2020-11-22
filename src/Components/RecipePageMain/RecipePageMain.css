@@ -3,6 +3,7 @@
 
 }
 .recipe-content {
+  width: 75%;
   margin: 10px;
   text-align: left;
 }
@@ -11,4 +12,20 @@
   flex-direction: column;
   align-items: center;
   justify-content:flex-start;
+}
+.amount {
+  margin-right: 5px;
+  font-weight:600;
+  font-size: 18px;
+}
+.unit {
+  margin-right: 5px;
+  text-decoration: underline;
+  text-decoration-color: #9F5FA7;
+}
+.ingredient {
+  font-size: 18px;
+}
+.content {
+  font-size:18px;
 }
