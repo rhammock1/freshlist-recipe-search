@@ -26,7 +26,6 @@ class App extends React.Component {
     
     let results = getRecipeForSearch(recipes, searchTerm)
     this.setState({searchResults: results})
-    console.log('hello');
     this.props.history.push('/searchResults');
     return results
   }

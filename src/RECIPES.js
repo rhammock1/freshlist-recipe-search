@@ -1047,9 +1047,9 @@ Serve over white or brown rice, garnish with scallion greens and sesame seeds.`,
       recipeType: 'Appetizer',
       ingredients: [
         {
-          ingredient: 'Large head of Bok Choy',
+          ingredient: 'Large Bok Choy',
           amount: 1,//a number
-          unit: 'each',
+          unit: 'head',
         },
         {
           ingredient: 'Sesame Oil',
@@ -1093,14 +1093,59 @@ warmed serving bowl, and serve immediately!`,
       recipeType: 'Entree',
       ingredients: [
         {
-          ingredient: 'Medium head of Kohlrabi',
+          ingredient: 'Medium Kohlrabi',
           amount: 1,//a number
-          unit: 'each',
+          unit: 'head',
         },
         {
           ingredient: 'Egg (Vegan option: 1/4 cup AP Flour + 1/3 cup water)',
           amount: 1,//a number
           unit: 'each',
+        },
+        {
+          ingredient: 'Smoked Paprika',
+          amount: 1/2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Salt',
+          amount: 1/2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Poultry Seasoning, optional',
+          amount: 1,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'For Breading:',
+          amount: 0,//a number
+          unit: '',
+        },
+        {
+          ingredient: 'Bread Crumbs',
+          amount: 1/2,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Smoked Paprika',
+          amount: 1/2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Salt',
+          amount: 1/2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Crushed Oats',
+          amount: 1,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Oil',
+          amount: 2,//a number
+          unit: 'tbsp',
         },
       ],
       content: `Bring a medium sized pot of salted water to a boil. While waiting for the water to boil use a vegetable peeler and remove the outer layer of the kohlrabi, discarding the peels. Cut the Kohlrabi into ½ inch sized slices and boil for 6-8 minutes. Remove the kohlrabi from the pot and set it aside to cool. (This process can be done the day before making the final dish) 
@@ -1115,58 +1160,256 @@ Enjoy schnitzel over mashed potatoes, on a Duke's Bread brioche hamburger bun, o
 
 `,
     },
-    //  {
-    //   id: '1e3df1g9a2',
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
-    //  {
-    //   id: '1e3df1g9a3',
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
-    //  {
-    //   id: '1e3df1g9a4',
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
-    //  {
-    //   id: '1e3df1g9a5',
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
+     {
+      id: '1e3df1g9a2',
+      name: `General Tso's Broccoli`,
+      recipeType: 'Side',
+      ingredients: [
+        {
+          ingredient: 'Rice Vinegar',
+          amount: 3,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Soy Sauce',
+          amount: 1/4,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Hoison Sauce',
+          amount: 2,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Vegetable Broth',
+          amount: 1/2,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'White Sugar',
+          amount: 3,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Brown Sugar',
+          amount: 3,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Ginger, minced',
+          amount: 1,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Garlic, minced',
+          amount: 1,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Garlic Powder',
+          amount: 1/2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Crushed Red Pepper Flakes',
+          amount: 1/4,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Cornstarch',
+          amount: 1,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Broccoli',
+          amount: 2,//a number
+          unit: 'heads',
+        },
+      ],
+      content: `Heat your oven to 375 degrees. Cut your broccoli into medium sized florets and place them into a medium sized bowl. Season your broccoli with oil salt and pepper, place on a roasting pan lined with parchment or a Silpat and bake for 15 minutes. While the broccoli is baking prepare your sauce. Take the remaining ingredients and place them into a medium sized pot. Bring this mixture up to a boil, whisking frequently. Once boiling, reduce heat to low and let simmer for 3-5 minutes to thicken. 
+Once thickened remove from direct heat but keep warm! Once the broccoli is removed from the oven, place into a saute pan and pour 1/2 cup of the finished sauce onto the broccoli. On medium heat let the broccoli simmer in the sauce for 3 minutes. Remove from the heat and garnish with any of the following- Scallions, peanuts or sesame seeds! `,
+    },
+     {
+      id: '1e3df1g9a3',
+      name: 'Grilled Peach and Heirloom Tomato Salad',
+      recipeType: 'Appetizer',
+      ingredients: [
+        {
+          ingredient: 'Peaches, pitted & sliced into quarters',
+          amount: 2,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Heirloom Tomato, quartered',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Basil, torn',
+          amount: 1/4,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Parsley, chopped',
+          amount: 2,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Almonds, toasted',
+          amount: 1,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Soft Cheese (Goat/Mozz/Vegan Ricotta)',
+          amount: 2,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Dressing:',
+          amount: 0,//a number
+          unit: '',
+        },
+        {
+          ingredient: 'White Balsamic Vinegar',
+          amount: 2,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Olive Oil',
+          amount: 3,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Grainy Mustard',
+          amount: 2,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Honey, or Agave',
+          amount: 1,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Red Pepper Flakes',
+          amount: 1/4,//a number
+          unit: 'tsp',
+        },
+        {
+          ingredient: 'Salt & Pepper',
+          amount: 1/4,//a number
+          unit: 'tsp',
+        },
+      ],
+      content: `Preheat your oven to 375 degrees. Toss your almonds with 1 teaspoon of olive oil, sprinkle with salt and pepper and toast in the oven for 7-10 minutes. 
+
+Combine all of your dressing ingredients into a small bowl and whisk together, taste and adjust seasonings as needed. 
+
+To grill your peaches brush peaches with oil and place on a greased grill over medium-high heat; close the lid and grill, turning once, until peaches are softened and grill-marked, about 6 minutes
+
+To assemble, place grilled peaches and quartered tomatoes in an alternating pattern on a plate, top with your herbs, toasted nuts, and cheese and finish by carefully pouring your dressing over the top. Finish this dish with a heavy pinch of salt and enjoy right away. `,
+    },
+     {
+      id: '1e3df1g9a4',
+      name: 'Red Potato Salad',
+      recipeType: 'Side',
+      ingredients: [
+        {
+          ingredient: 'Red Potatoes',
+          amount: 2,//a number
+          unit: 'lb',
+        },
+        {
+          ingredient: 'Red Scallions, bottoms only',
+          amount: 2,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Dill Pickle Spear',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'White Onion',
+          amount: 1/4,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Mayonnaise, or Vegan Alternate',
+          amount: 1/4,//a number
+          unit: 'cup',
+        },
+        {
+          ingredient: 'Mustard',
+          amount: 2,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Salt & Pepper',
+          amount: 0,//a number
+          unit: 'to taste',
+        },
+      ],
+      content: `Start by cleaning your red potatoes of any superficial dirt that might be on them. Fill a medium sized sauce pot half way with water and add a tablespoon of salt to it. Cut your red potatoes into 1/4 inch chunks and place them into the sauce pot. Put this pot on your stove top and bring to a boil. Once boiling reduce pot to a simmer and continue to cook for 10-15 minutes or until a knife can easily pierce the potato. 
+While your potatoes cook on the stove top, in a small bowl, small dice your onion, pickle spear, and red scallion bottoms (reserving the top for another application or garnish). Once cut set a side. In another small bowl whisk together your mayonnaise, mustard and pickle juice, set aside. 
+
+Once the potatoes have finished cooking, remove them from the pot using a colander place cooked potatoes onto a sheet tray to cool, season your potatoes with salt and pepper. 
+
+Once the potatoes are completely cool, add everything to one medium sized bowl and mix well. Season as needed with salt and pepper. Garnish your potato salad scallion greens cut thinly on a bias and enjoy!`,
+    },
+     {
+      id: '1e3df1g9a5',
+      name: 'Warm Green Bean and Peach Salad',
+      recipeType: 'Appetizer',
+      ingredients: [
+        {
+          ingredient: 'Green Beans',
+          amount: 8,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Medium Peach',
+          amount: 1,//a number
+          unit: 'each',
+        },
+        {
+          ingredient: 'Cherry Tomatoes',
+          amount: 3,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Pecans',
+          amount: 2,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Vegetable Stock',
+          amount: 1,//a number
+          unit: 'oz',
+        },
+        {
+          ingredient: 'Butter, or Vegan Alternate',
+          amount: 1,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Maple Syrup',
+          amount: 1/2,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Brown Sugar',
+          amount: 1/2,//a number
+          unit: 'tbsp',
+        },
+        {
+          ingredient: 'Salt & Pepper',
+          amount: 0,//a number
+          unit: 'to taste',
+        },
+      ],
+      content: `Bring a medium sized pot of water up to boil and add a pinch of salt. In a separate bowl add some water and ice together to make an ice bath. Clean the ends off of the green beans with a pairing knife. When the water is boiling put your green beans in for 2-3 minutes. Remove from boiling water immediately and place in the ice bath.  Strain the beans from the water and set aside. 
+Cut your cherry tomatoes in half and remove the pit from your peach. Cut your peaches into slices and set aside. In a medium sized pan over medium heat melt your butter and add your pecans. Cook your pecans over medium heat for 3-4 minutes or until fragrant. Next add your brown sugar, maple syrup, stock, cherry tomatoes and peaches. Cook together until the peaches are warm and there is a small sauce sticking to the beans. Season with salt and pepper and enjoy as a nice summer side!`,
+    },
     //  {
     //   id: '1e3df1g9a6',
     //   name: '',
