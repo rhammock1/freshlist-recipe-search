@@ -8,7 +8,7 @@ import RecipeTypeNav from './Components/RecipeTypeNav/RecipeTypeNav';
 import RecipeSearchForm from './Components/RecipeSearchForm/RecipeSearchForm';
 import RecipePageMain from './Components/RecipePageMain/RecipePageMain';
 import RecipePageNav from './Components/RecipePageNav/RecipePageNav';
-import { Route } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import SearchResults from './Components/SearchResults/SearchResults';
 import { getRecipeForSearch } from './helperFunction';
 
@@ -82,6 +82,7 @@ class App extends React.Component {
         <div className='big-container'>
           <nav>{this.renderNavViews()}</nav>
           <main>{this.renderMainViews()}</main>
+          <footer><a href='https://freshlist.com'>&#169; Freshlist 2020</a></footer>
         </div>
         
       </RecipeContext.Provider>    
