@@ -43,7 +43,7 @@ class RecipeSearchForm extends React.Component {
               <option value='Dessert'>Dessert</option>
             </select>
           </div> */}
-          <button type='submit'>SEND IT!</button>
+          <button type='submit'>Search</button>
         </fieldset>
       </form>
     )
