@@ -1410,21 +1410,6 @@ Once the potatoes are completely cool, add everything to one medium sized bowl a
       content: `Bring a medium sized pot of water up to boil and add a pinch of salt. In a separate bowl add some water and ice together to make an ice bath. Clean the ends off of the green beans with a pairing knife. When the water is boiling put your green beans in for 2-3 minutes. Remove from boiling water immediately and place in the ice bath.  Strain the beans from the water and set aside. 
 Cut your cherry tomatoes in half and remove the pit from your peach. Cut your peaches into slices and set aside. In a medium sized pan over medium heat melt your butter and add your pecans. Cook your pecans over medium heat for 3-4 minutes or until fragrant. Next add your brown sugar, maple syrup, stock, cherry tomatoes and peaches. Cook together until the peaches are warm and there is a small sauce sticking to the beans. Season with salt and pepper and enjoy as a nice summer side!`,
     },
-    //  {
-    //   id: '1e3df1g9a6',
-    //   name: '',
-    //   recipeType: '',
-    //   ingredients: [
-    //     {
-    //       ingredient: '',
-    //       amount: 3,//a number
-    //       unit: lb,
-    //     }
-    //   ],
-    //   content: '',
-    // },
-    
-    
   ]
 }
 

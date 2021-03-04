@@ -81,7 +81,7 @@ class App extends React.Component {
         <div className='big-container'>
           <nav>{this.renderNavViews()}</nav>
           <main>{this.renderMainViews()}</main>
-          <footer><a href='https://freshlist.com'>Freshlist &#169; 2020</a></footer>
+          <footer><a href='https://freshlist.com'>Freshlist &#169; 2021</a></footer>
         </div>
         
       </RecipeContext.Provider>    
