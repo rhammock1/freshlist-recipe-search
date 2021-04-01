@@ -1,23 +1,40 @@
 import './App.css';
 import React from 'react';
 import RecipeContext from './RecipeContext';
-import RECIPES from './RECIPES';
 import Header from './Components/Header/Header';
 import RecipeListMain from './Components/RecipeListMain/RecipeListMain';
 import RecipeTypeNav from './Components/RecipeTypeNav/RecipeTypeNav';
 import RecipeSearchForm from './Components/RecipeSearchForm/RecipeSearchForm';
 import RecipePageMain from './Components/RecipePageMain/RecipePageMain';
 import RecipePageNav from './Components/RecipePageNav/RecipePageNav';
-import { Link, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import SearchResults from './Components/SearchResults/SearchResults';
 import { getRecipeForSearch } from './helperFunction';
 
 class App extends React.Component {
   state = {
-    recipeTypes: RECIPES.recipeType,
-    recipes: RECIPES.recipes,
+    recipeTypes: ['Appetizer', 'Entree', 'Side', 'Sauce', 'Beverage', 'Dessert'],
+    recipes: [],
     searchResults: [],
+    error: {}
   }
+
+  componentDidMount() {
+    const URL = 'http://localhost:8080/api/recipes';
+    fetch(URL)
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        } else {
+          return res.json().then((error) => this.setState({ error }));
+        }
+      })
+      .then((recipes) => {
+        this.setState({ recipes });
+      })
+      .catch((error) => this.setState({ error }));
+  }
+
   handleSubmit = event => {
     event.preventDefault();
     const searchTerm = event.currentTarget['search-bar'].value;
