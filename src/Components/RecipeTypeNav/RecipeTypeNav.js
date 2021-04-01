@@ -14,13 +14,13 @@ class RecipeTypeNav extends React.Component {
   }
 
   render() {
-    const recipeTypes = this.context.recipeTypes;
+    const { recipeTypes } = this.context;
     return (
       <ul className='recipeTypeNav'>
         {recipeTypes.map((type, index) => {
           return (
             <li className='type-nav'  key={index}>
-              <NavLink onClick={event => this.handleAddClass(event)}className='type-link' id={type.type} to={`/recipeType/${type.type}`}>{type.type}</NavLink>
+              <NavLink onClick={event => this.handleAddClass(event)}className='type-link' id={type} to={`/recipeType/${type}`}>{type}</NavLink>
             </li>
             )
         })}
