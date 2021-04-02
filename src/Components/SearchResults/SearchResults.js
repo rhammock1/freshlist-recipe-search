@@ -9,11 +9,13 @@ class SearchResults extends React.Component {
 
   render() {
     const { results } = this.context;
-    
+    console.log(results);
+    const message = (results.length === 0) ? 'Sorry about that! There aren\'t any recipes matching that search term.' : null;
     return(
       <section className='recipe-list'>
         <Link to='/'><button>Back</button></Link>
         <h2 className='results'>Results:</h2>
+        <p>{message}</p>
           <ul className='search-results'>
             {results.map((recipe, index) => {
           
