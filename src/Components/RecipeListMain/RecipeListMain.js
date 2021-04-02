@@ -1,6 +1,6 @@
 import React from 'react';
 import RecipeContext from '../../RecipeContext';
-import { getRecipesForType } from '../../helperFunction';
+// import { getRecipesForType } from '../../helperFunction';
 import Recipe from '../Recipe/Recipe';
 import './RecipeListMain.css';
 
@@ -9,8 +9,10 @@ class RecipeListMain extends React.Component {
 
   render() {
     const { recipeType } = this.props.match.params;
-    const recipes = this.context.recipes;
-    const recipesForType = getRecipesForType(recipes, recipeType);
+    
+    const { getRecipesForType } = this.context;
+    const recipesForType = getRecipesForType(recipeType);
+    
     recipesForType.sort(function(a,b) {
       if(a.name < b.name) {
         return -1;

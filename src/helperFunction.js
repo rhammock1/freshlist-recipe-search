@@ -1,13 +1,13 @@
-const findRecipeType = function(recipeTypes, rtype) {
-  return recipeTypes.find(type => type.type === rtype);
-}
+// const findRecipeType = function(recipeTypes, rtype) {
+//   return recipeTypes.find(type => type.type === rtype);
+// }
 
-const findRecipe = function(recipes, recipeId) {
-  let recipe;
-  recipe = recipes.find(recipe => recipe.id === Number(recipeId));
-  console.log(recipe);
-  return recipe;
-}
+// const findRecipe = function(recipes, recipeId) {
+//   let recipe;
+//   recipe = recipes.find(recipe => recipe.id === Number(recipeId));
+//   console.log(recipe);
+//   return recipe;
+// }
 
 const getRecipesForType = function(recipes, type) {
   return (!type) ? recipes : recipes.filter(recipe => recipe.recipeType === type)
@@ -25,8 +25,8 @@ const getRecipeForSearch = function(recipes, searchTerm) {
 }
 
 export {
-  findRecipeType,
-  findRecipe,
+  // findRecipeType,
+  // findRecipe,
   getRecipesForType,
   getRecipeForSearch,
 }

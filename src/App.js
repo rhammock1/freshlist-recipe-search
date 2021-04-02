@@ -60,6 +60,11 @@ class App extends React.Component {
     return recipe;
   }
 
+  getRecipesForType = (type) => {
+    const { recipes } = this.state;
+    return (!type) ? recipes : recipes.filter(recipe => recipe.type === type)
+  }
+
   renderMainViews() {
 
     return (
@@ -102,6 +107,7 @@ class App extends React.Component {
       handleSubmit: this.handleSubmit,
       results: this.state.searchResults,
       findRecipe: this.findRecipe,
+      getRecipesForType: this.getRecipesForType,
     };
       
       
