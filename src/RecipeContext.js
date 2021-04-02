@@ -5,7 +5,9 @@ const RecipeContext = React.createContext({
   recipeTypes: [],
   recipes: [],
   handleSubmit: () => {},
-  results: []
+  results: [],
+  findRecipe: () => {},
+  getRecipesForType: () => {},
 });
 
 export default RecipeContext;
