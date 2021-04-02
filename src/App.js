@@ -9,7 +9,6 @@ import RecipePageMain from './Components/RecipePageMain/RecipePageMain';
 import RecipePageNav from './Components/RecipePageNav/RecipePageNav';
 import { Route } from 'react-router-dom';
 import SearchResults from './Components/SearchResults/SearchResults';
-import { getRecipeForSearch } from './helperFunction';
 
 class App extends React.Component {
   state = {
@@ -35,18 +34,15 @@ class App extends React.Component {
       .catch((error) => this.setState({ error }));
   }
 
-  componentDidMount() {
-    console.log('App mounted');
-    this.handleGetRecipes();  
+  async componentDidMount() {
+    await this.handleGetRecipes();  
   }
 
   handleSubmit = event => {
     event.preventDefault();
     const searchTerm = event.currentTarget['search-bar'].value;
     
-    const recipes = this.state.recipes;
-    
-    let results = getRecipeForSearch(recipes, searchTerm)
+    let results = this.getRecipeForSearch(searchTerm)
     this.setState({searchResults: results})
     this.props.history.push('/searchResults');
     return results
@@ -56,13 +52,26 @@ class App extends React.Component {
     const { recipes } = this.state;
   
     const recipe = recipes.find((item) => item.id === parseInt(recipeId));
-    console.log(recipe);
+    
     return recipe;
   }
 
   getRecipesForType = (type) => {
     const { recipes } = this.state;
     return (!type) ? recipes : recipes.filter(recipe => recipe.type === type)
+  }
+
+  getRecipeForSearch = (searchTerm) => {
+    const { recipes } = this.state;
+    let searchResults = [];
+    recipes.filter((recipe) => {
+      if (recipe.name.trim().toLowerCase().includes(searchTerm.toLowerCase().trim())) {
+        searchResults.push(recipe);
+      }
+      return searchResults;
+    })
+    
+    return searchResults;
   }
 
   renderMainViews() {

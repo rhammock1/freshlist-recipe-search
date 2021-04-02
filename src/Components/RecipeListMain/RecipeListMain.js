@@ -1,6 +1,5 @@
 import React from 'react';
 import RecipeContext from '../../RecipeContext';
-// import { getRecipesForType } from '../../helperFunction';
 import Recipe from '../Recipe/Recipe';
 import './RecipeListMain.css';
 

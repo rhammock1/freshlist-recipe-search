@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 import './SearchResults.css';
 
 class SearchResults extends React.Component {
-  static contextType=RecipeContext;
+  static contextType = RecipeContext;
 
   render() {
-    const results = this.context.results;
-    console.log(results);
+    const { results } = this.context;
+    
     return(
       <section className='recipe-list'>
         <Link to='/'><button>Back</button></Link>
