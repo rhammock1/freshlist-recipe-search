@@ -1,19 +1,18 @@
 import React from 'react';
 import Recipe from '../Recipe/Recipe';
-import { findRecipe } from '../../helperFunction';
 import RecipeContext from '../../RecipeContext';
 import './RecipePageMain.css';
 
 
 const Ingredient = function(props) {
-  const rounded = Math.round(props.ing.amount * 100)/100;
+  const rounded = Math.ceil(props.ing.amount);
   if (rounded === 0) {
     return (
-    <p className='recipe-ing'>{props.ing.unit} <span className='ingredient'>{props.ing.ingredient}</span></p>
+    <p className='recipe-ing'><span className='unit'>{props.ing.unit}</span> <span className='ingredient'>{props.ing.ingredient}</span></p>
     )
   } else {
     return (
-    <p className='recipe-ing'><span className='amount'>{rounded}</span> <span className='unit'>{props.ing.unit}</span> <span className='ingredient'>{props.ing.ingredient}</span></p>
+    <p className='recipe-ing'><span className='amount'>{props.ing.amount}</span> <span className='unit'>{props.ing.unit}</span> <span className='ingredient'>{props.ing.ingredient}</span></p>
     )
   }
   
@@ -21,6 +20,7 @@ const Ingredient = function(props) {
 }
 
 class RecipePageMain extends React.Component {
+
   static defaultProps = {
     match: {
       params: {}
@@ -31,15 +31,11 @@ class RecipePageMain extends React.Component {
   }
 
   static contextType = RecipeContext
-
- 
   
   render() {
-   const recipes = this.context.recipes;
-    
-    const {recipeId} = this.props.match.params
-    
-    const recipe = findRecipe(recipes, recipeId) 
+    const { findRecipe } = this.context;
+    const { recipeId } = this.props.match.params;
+    const recipe = findRecipe(recipeId) || { ingredients: []};
     
     return (
       <section className='recipePageMain'>
@@ -51,7 +47,7 @@ class RecipePageMain extends React.Component {
             
               {recipe.ingredients.map((ing, index) => {
                 return (
-                  <li className='ing-container'key={index}>
+                  <li className='ing-container' key={index}>
                     <Ingredient key={index} ing={ing} />
                   </li>
                   

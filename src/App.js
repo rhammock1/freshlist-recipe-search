@@ -19,9 +19,9 @@ class App extends React.Component {
     error: {}
   }
 
-  componentDidMount() {
-    const URL = 'http://localhost:8080/api/recipes';
-    fetch(URL)
+  async handleGetRecipes() {
+    const URL = 'https://apricot-crisp-76259.herokuapp.com/api/recipes';
+    await fetch(URL)
       .then((res) => {
         if (res.ok) {
           return res.json();
@@ -35,6 +35,11 @@ class App extends React.Component {
       .catch((error) => this.setState({ error }));
   }
 
+  componentDidMount() {
+    console.log('App mounted');
+    this.handleGetRecipes();  
+  }
+
   handleSubmit = event => {
     event.preventDefault();
     const searchTerm = event.currentTarget['search-bar'].value;
@@ -45,6 +50,14 @@ class App extends React.Component {
     this.setState({searchResults: results})
     this.props.history.push('/searchResults');
     return results
+  }
+
+  findRecipe = (recipeId) => {
+    const { recipes } = this.state;
+  
+    const recipe = recipes.find((item) => item.id === parseInt(recipeId));
+    console.log(recipe);
+    return recipe;
   }
 
   renderMainViews() {
@@ -87,7 +100,9 @@ class App extends React.Component {
       recipeTypes: this.state.recipeTypes, 
       recipes: this.state.recipes,
       handleSubmit: this.handleSubmit,
-      results: this.state.searchResults};
+      results: this.state.searchResults,
+      findRecipe: this.findRecipe,
+    };
       
       
     return (

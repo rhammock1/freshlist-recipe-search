@@ -4,7 +4,8 @@ const findRecipeType = function(recipeTypes, rtype) {
 
 const findRecipe = function(recipes, recipeId) {
   let recipe;
-  recipe = recipes.find(recipe => recipe.id === recipeId);
+  recipe = recipes.find(recipe => recipe.id === Number(recipeId));
+  console.log(recipe);
   return recipe;
 }
 
